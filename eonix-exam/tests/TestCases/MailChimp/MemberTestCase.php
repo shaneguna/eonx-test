@@ -50,6 +50,9 @@ abstract class MemberTestCase extends WithDatabaseTestCase
         'tags' => ['sports']
     ];
 
+    /**
+     * @var array
+     */
     protected static $duplicateMailData = [
         'email_address' => 'examdesu@gmail.com',
         'email_type' => null,
@@ -118,6 +121,29 @@ abstract class MemberTestCase extends WithDatabaseTestCase
     ];
 
     /**
+     * Tap on setUp fixture method for our requirements
+     */
+    public function setUp(): void
+    {
+        parent::setUp();
+
+        self::$memberData['email_address'] = $this->createEmail();
+
+        // Create initial test list for the whole members testing suite
+        $this->post('/mailchimp/lists', static::$listData);
+
+        $content = json_decode($this->response->getContent(), true);
+        $this->createList($content);
+
+        $this->assertResponseOk();
+        $this->seeJson(static::$listData);
+
+        // Set mock id's to class properties
+        $this->listId = $content['list_id'];
+        $this->listMailchimpId = $content['mail_chimp_id'];
+    }
+
+    /**
      * Call MailChimp to delete lists created during test.
      *
      * @return void
@@ -178,16 +204,9 @@ abstract class MemberTestCase extends WithDatabaseTestCase
         self::assertEquals(self::MAILCHIMP_EXCEPTION_MESSAGE, $content['message']);
     }
 
-/*    protected function assertMailChimpDeleteExceptionResponse(JsonResponse $response, string $memberId): void
-    {
-        $content = \json_decode($response->content(), true);
-
-        self::assertEquals(400, $response->getStatusCode());
-        self::assertArrayHasKey('message', $content);
-        self::assertEquals(\sprintf('Mailchimp member: %s not found for given list. ', $memberId) . $this->listId, $content['message']);
-    }*/
-
     /**
+     * Create Mailchimp member into database.
+     *
      * @param array $data
      * @return MailChimpMember
      */
@@ -240,29 +259,6 @@ abstract class MemberTestCase extends WithDatabaseTestCase
             ->andThrow(new \Exception(self::MAILCHIMP_EXCEPTION_MESSAGE));
 
         return $mailChimp;
-    }
-
-    /**
-     * Extend to Setup method with our requirements
-     */
-    public function setUp(): void
-    {
-        parent::setUp();
-
-        self::$memberData['email_address'] = $this->createEmail();
-
-        // Create initial test list for the whole members testing suite
-        $this->post('/mailchimp/lists', static::$listData);
-
-        $content = json_decode($this->response->getContent(), true);
-        $this->createList($content);
-
-        $this->assertResponseOk();
-        $this->seeJson(static::$listData);
-
-        // Set mock id's to class properties
-        $this->listId = $content['list_id'];
-        $this->listMailchimpId = $content['mail_chimp_id'];
     }
 
     /**

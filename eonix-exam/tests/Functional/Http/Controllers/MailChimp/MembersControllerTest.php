@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace Tests\App\Functional\Http\Controllers\MailChimp;
 
-use phpDocumentor\Reflection\Types\Void_;
 use Tests\App\TestCases\MailChimp\MemberTestCase;
 
 class MembersControllerTest extends MemberTestCase

@@ -18,7 +18,8 @@ class MembersControllerTest extends MemberTestCase
         /** @noinspection PhpParamsInspection Mock given on purpose */
         $controller = new MembersController($this->entityManager, $this->mockMailChimpForException('post'));
 
-        $this->assertMailChimpExceptionResponse($controller->create($this->getRequest(self::$memberData), $this->listId));
+        $this->assertMailChimpExceptionResponse($controller->create($this->getRequest(self::$memberData),
+            $this->listId));
     }
 
     /**
@@ -72,6 +73,7 @@ class MembersControllerTest extends MemberTestCase
             return;
         }
 
-        $this->assertMailChimpExceptionResponse($controller->update($this->getRequest(), $this->listId, $member['member_id']));
+        $this->assertMailChimpExceptionResponse($controller->update($this->getRequest(), $this->listId,
+            $member['member_id']));
     }
 }

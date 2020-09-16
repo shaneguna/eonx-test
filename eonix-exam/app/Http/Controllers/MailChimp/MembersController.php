@@ -222,7 +222,8 @@ class MembersController extends Controller
         $memberBody->fill($request->all());
 
         // Validate entity
-        $validator = $this->getValidationFactory()->make($memberBody->toMailChimpArray(), $memberBody->getValidationRules());
+        $validator = $this->getValidationFactory()->make($memberBody->toMailChimpArray(),
+            $memberBody->getValidationRules());
 
         if ($validator->fails()) {
             // Return error response if validation failed

@@ -1,0 +1,63 @@
+  version: '3'
+  networks:
+    laravel:
+  services:
+    app:
+      build:
+        context: .
+        dockerfile: ./docker/Dockerfile
+      links:
+        - db
+      image: smgchio/php
+      container_name: eonix-exam
+      restart: unless-stopped
+      tty: true
+      environment:
+        DB_HOST: db
+        DB_DATABASE: laravel
+        DB_USERNAME: root
+        DB_PASSWORD: laradocker
+        SERVICE_NAME: app
+        SERVICE_TAGS: dev
+      working_dir: /var/www/html
+      volumes:
+        - ./eonix-exam:/var/www/html
+        - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+      networks:
+        - laravel
+    webserver:
+      image: nginx:alpine
+      container_name: webserver
+      restart: unless-stopped
+      tty: true
+      ports:
+        - "80:80"
+        - "443:443"
+      volumes:
+        - ./eonix-exam:/var/www/html
+        - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+      networks:
+        - laravel
+    db:
+      image: mysql:5.7.22
+      container_name: db
+      restart: unless-stopped
+      tty: true
+      ports:
+        - "3306:3306"
+      environment:
+        MYSQL_DATABASE: laravel
+        MYSQL_USER: root
+        MYSQL_PASSWORD: laradocker
+        MYSQL_ROOT_PASSWORD: laradocker
+        SERVICE_TAGS: dev
+        SERVICE_NAME: db
+      volumes:
+        - mysql_data:/var/lib/mysql
+        - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+      networks:
+        - laravel
+  volumes:
+    mysql_data:
+      driver: local
+

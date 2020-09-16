@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetector">
+    <phpmd_settings>
+      <MessDetectorConfiguration tool_path="$PROJECT_DIR$/eonix-exam/vendor/bin/phpmd" />
+    </phpmd_settings>
+  </component>
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/eonix-exam/vendor/bin/phpcbf" tool_path="$PROJECT_DIR$/eonix-exam/vendor/bin/phpcs" />
+    </phpcs_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/finder-facade" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/theseer/fdomdocument" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/laravel/lumen-framework" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/phpcpd" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/bus" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/log" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/session" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/pagination" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/auth" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/routing" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/hashing" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/events" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/validation" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/view" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/encryption" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/pdepend/pdepend" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/broadcasting" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/console" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/cache" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/http" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/config" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/pipeline" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/translation" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/illuminate/queue" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/laravel-doctrine/orm" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/kylekatarnls/update-helper" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpmd/phpmd" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/slevomat/coding-standard" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nette/php-generator" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nette/robot-loader" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nette/finder" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/pacely/mailchimp-apiv3" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nette/di" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nette/neon" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/composer" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/nette/bootstrap" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/eoneopay/standards" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/eoneopay/utils" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/xethron/migrations-generator" />
+      <path value="$PROJECT_DIR$/eonix-exam/vendor/xethron/laravel-4-generators" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/eonix-exam/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>

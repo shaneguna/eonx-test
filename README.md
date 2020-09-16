@@ -15,7 +15,7 @@
         ./local.sh
     ``` 
 
-* Verify installation by visit [http://localhost](http://localhost/) on the browser.
+* Verify installation by visiting [http://localhost](http://localhost/).
 
 # Docker Commands Reference
 
@@ -28,8 +28,10 @@
 * Terminate running instance
 
     ```bash
-        docker-compose kill
+        docker stop [OPTIONS] CONTAINER [CONTAINER...]
     ```
+    
+    
     
 # Dependencies
 
